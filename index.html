@@ -15,15 +15,29 @@
         img {
             vertical-align: top;
         }
-        
+
+        img#responsive {
+            display:none;
+        }
+
+        @media screen and (max-width: 768px) {
+            #responsive {
+                display:block;
+            }
+            .web {
+                display: none;
+            }
+        }
         
     </style>
 </head>
 <body>
-    <img src="header.jpg" alt="">
-    <img src="hero.jpg" alt="">
-    <img src="acustica.jpg" alt="">
-    <img src="clasica.jpg" alt="">
-    <img src="footer.jpg" alt="">
+    <img src="invie-responsive.png" id="responsive" alt="">
+    <img src="header.jpg" alt="" class="web">
+    <img src="hero.jpg" alt="" class="web">
+    <img src="clasica.jpg" alt="" class="web">
+    <img src="acustica.jpg" alt="" class="web">
+    <img src="footer.jpg" alt="" class="web">
+    
 </body>
 </html>
